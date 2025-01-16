@@ -29,7 +29,9 @@ del /q /s /f %AppData%\temp\*.*
 del /q /s /f %HomePath%\AppData\LocalLow\Temp\*.*
 echo Files deleted!
 pause
+cls
 goto menu
+
 
 :option2
 echo Disabling Windows Telemetry...
@@ -57,6 +59,7 @@ sc config WbioSrvc start= disabled
 sc stop lfsvc
 sc config lfsvc start= disabled
 pause
+cls 
 goto menu
 
 :option3
@@ -64,6 +67,7 @@ cls
 defrag C: /O /W /V /U
 echo "Optimization completed"
 pause
+cls
 goto menu
 
 :option4
@@ -83,6 +87,7 @@ del /q /s /f "%LocalAppData%\Google\Chrome\User Data\Default\Code Cache\*.*"
 del /q /s /f "%LocalAppData%\Google\Chrome\User Data\Default\Media Cache\*.*"
 echo Google Chrome cache cleared!
 pause
+cls
 goto menu
 
 :edge_cache
@@ -92,6 +97,7 @@ del /q /s /f "%LocalAppData%\Microsoft\Edge\User Data\Default\Code Cache\*.*"
 del /q /s /f "%LocalAppData%\Microsoft\Edge\User Data\Default\Media Cache\*.*"
 echo Microsoft Edge cache cleared!
 pause
+cls
 goto menu
 
 :firefox_cache
@@ -99,6 +105,7 @@ echo Clearing Mozilla Firefox cache...
 del /q /s /f "%AppData%\Mozilla\Firefox\Profiles\*\cache2\*.*"
 echo Mozilla Firefox cache cleared!
 pause
+cls
 goto menu
 
 :option5
