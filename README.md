@@ -4,7 +4,7 @@ This Windows Cleaner script is a simple batch script designed to optimize and re
 
 **Features**
 
-This script deletes files in the user's Temp folder (%temp%).
+This script deletes files in the user's Temp folders, remove temp files for Edge, Chrome and Firefox, removes telemetry(only tested in Windows 11), and optimizes the system drive. 
 
 **Usage**
 
@@ -16,5 +16,6 @@ The script will execute the chosen option and return to the menu.
 **Future updates**
 
 **Adding an option to disable windows telemetry.(Done)**
-2) Adding more optimisation options in the menu.
-3) Adding more things like common optimisations programs do.
+Add a GUI
+Add a function to store a log of what the script does
+Clean not necessary registry keys
